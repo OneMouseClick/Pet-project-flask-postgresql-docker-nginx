@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Flask App</title>
+   {% block css %}
+   <link rel="stylesheet" type="text/css" href="static/css/style.css">
+   {% endblock %}
+</head>
+<body>
+   <nav class="navbar">
+      <div class="container">
+
+         <a href="index" class="navbar-brand">Flask App</a>
+
+         <div class="navbar-wrap">
+            <ul class="navbar-menu">
+               <li><a href="about">About us</a></li>
+               <li><a href="contacts">Сontacts</a></li>
+               <li><a href="login">Log in</a></li>
+               <li><a href="signin">Sign in</a></li>
+            </ul>
+         </div>
+
+      </div>
+   </nav>
+
+
+   <div class="main-text">
+      {% block body_text %}
+      <p>Welcom to main page!</p>
+      <p>It's our first flask application</p>
+      <p>Please click on some button to chek it</p>
+      {% endblock %}
+   </div>
+
+   {% block body_pic %}{% endblock %}
+   {% block regform %}{% endblock %}
+
+</body>
+</html>

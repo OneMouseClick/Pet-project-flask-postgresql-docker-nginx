@@ -1,0 +1,33 @@
+{% extends 'index.html' %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/form.css">
+{% endblock %}
+
+{% block body_text %}{% endblock %}
+
+{% block regform %}
+    <form method="post">
+        <div class="form">
+
+            <div class="title">Welcome</div>
+
+            <div class="subtitle">Let's to come in your account!</div>
+
+            <div class="input-container ic1">
+            <input id="firstname" class="input" type="text" name="login" placeholder=" " />
+            <div class="cut"></div>
+            <label for="firstname" class="placeholder">Login</label>
+            </div>
+
+            <div class="input-container ic2">
+            <input id="lastname" class="input" type="text" name="password" placeholder=" " />
+            <div class="cut"></div>
+            <label for="lastname" class="placeholder">Password</label>
+            </div>
+
+            <button type="text" class="submit">submit</button>
+        </div>
+    </form>
+{% endblock %}
