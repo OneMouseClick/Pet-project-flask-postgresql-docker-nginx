@@ -10,4 +10,6 @@ How to start?
    login = root@dev.ru; password = postgres
    register new server with random name and establish a connection with these parameters:
    Host name/address = db; Maintenance database = flask_dbname; User name = postgres; Password = postgres;
-6) Have fun!
+
+   All these settings are in the file "docker-compose.yml"
+7) Have fun!
